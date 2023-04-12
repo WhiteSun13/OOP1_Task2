@@ -11,14 +11,18 @@ namespace OOP1_Task2
         decimal deltaItr;
         decimal guessItr;
         decimal resultItr;
-        //Расcчет корня через MathSqrt
+        /// <summary>
+        ///Расcчет корня через MathSqrt
+        /// </summary>
         /// <param name="numberDouble">Принимает число типа double</param>
         /// <returns>Возвращает квадратный корень этого числа</returns>
         double SqrtRoot(double numberDouble)
         {
             return Math.Sqrt(numberDouble);
         }
-        //Нахождение корня через MathSqrt
+        /// <summary>
+        /// Нахождение корня через MathSqrt
+        /// </summary>
         void MathSqrt()
         {
             //Расчет по Math Sqrt
@@ -46,7 +50,9 @@ namespace OOP1_Task2
                 return;
             }
         }
-        //Нахождение корня методом Ньютона
+        /// <summary>
+        /// Нахождение корня методом Ньютона
+        /// </summary>
         void NewtonRoot()
         {
             //Проверяем ввод
@@ -81,7 +87,9 @@ namespace OOP1_Task2
                 MessageBox.Show("Введите decimal"); return;
             }
         }
-        //Метод, задающий значения и проверяющий введенное значение на 0 и -
+        /// <summary>
+        /// Метод, задающий значения и проверяющий введенное значение на 0 и -
+        /// </summary>
         void PreparationForIter()
         {
             if (itr == 0)
@@ -113,7 +121,9 @@ namespace OOP1_Task2
                 }
             }
         }
-        //Одна итерация по нажатию на кнопку
+        /// <summary>
+        /// Одна итерация по нажатию на кнопку
+        /// </summary>
         void Iteration()
         {
             //То же, что и в методе Ньютона, но без цикла
@@ -131,7 +141,7 @@ namespace OOP1_Task2
                 return;
             }
             itr++;
-            amOfIter.Text = "Количество итераций: " + itr;
+            amOfIter.Text = "Итераций: " + itr;
             fault.Text = "Погрешность: " + Math.Abs(resultItr - guessItr);
             RootOnIter.Text = "Корень во время итерации: " + resultItr;
         }
@@ -139,19 +149,32 @@ namespace OOP1_Task2
         {
             InitializeComponent();
         }
-        //Нажатие на кнопку Вычислить
+        /// <summary>
+        /// Нажатие на кнопку Вычислить
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Calculate_Click(object sender, EventArgs e)
         {
             MathSqrt();
             NewtonRoot();
         }
-        //Нажатие на кнопку Выполнить итерацию
+        /// <summary>
+        /// Нажатие на кнопку Выполнить итерацию
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void runIteration_Click(object sender, EventArgs e)
         {
             PreparationForIter();
             Iteration();
         }
-        //Изменение значения в textbox
+        /// <summary>
+        ///Изменение значения в textbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        
         private void textBoxValue_TextChanged(object sender, EventArgs e)
         {
             itr = 0;

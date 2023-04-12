@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Admin\source\repos\OOP1_Task2\OOP1_Task2\OOP1_Task2.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>

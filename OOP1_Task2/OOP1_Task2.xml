@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OOP1_Task2</name>
+    </assembly>
+    <members>
+        <member name="M:OOP1_Task2.Form1.SqrtRoot(System.Double)">
+             <summary>
+            Расcчет корня через MathSqrt
+             </summary>
+             <param name="numberDouble">Принимает число типа double</param>
+             <returns>Возвращает квадратный корень этого числа</returns>
+        </member>
+        <member name="M:OOP1_Task2.Form1.MathSqrt">
+            <summary>
+            Нахождение корня через MathSqrt
+            </summary>
+        </member>
+        <member name="M:OOP1_Task2.Form1.NewtonRoot">
+            <summary>
+            Нахождение корня методом Ньютона
+            </summary>
+        </member>
+        <member name="M:OOP1_Task2.Form1.PreparationForIter">
+            <summary>
+            Метод, задающий значения и проверяющий введенное значение на 0 и -
+            </summary>
+        </member>
+        <member name="M:OOP1_Task2.Form1.Iteration">
+            <summary>
+            Одна итерация по нажатию на кнопку
+            </summary>
+        </member>
+        <member name="M:OOP1_Task2.Form1.Calculate_Click(System.Object,System.EventArgs)">
+            <summary>
+            Нажатие на кнопку Вычислить
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OOP1_Task2.Form1.runIteration_Click(System.Object,System.EventArgs)">
+            <summary>
+            Нажатие на кнопку Выполнить итерацию
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:OOP1_Task2.Form1.textBoxValue_TextChanged(System.Object,System.EventArgs)">
+             <summary>
+            Изменение значения в textbox
+             </summary>
+             <param name="sender"></param>
+             <param name="e"></param>
+        </member>
+        <member name="F:OOP1_Task2.Form1.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OOP1_Task2.Form1.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OOP1_Task2.Form1.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:OOP1_Task2.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>
